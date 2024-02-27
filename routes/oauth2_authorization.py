@@ -1,6 +1,6 @@
 import google.oauth2.credentials
 import google_auth_oauthlib.flow
-
+from pathlib import Path
 
 sample_passthrough_value = None
 
@@ -9,7 +9,7 @@ sample_passthrough_value = None
 # also use the from_client_config method, which passes the client configuration as it originally
 # appeared in a client secrets file but doesn't access the file itself.)
 flow = google_auth_oauthlib.flow.Flow.from_client_secrets_file(
-    'client_secret.json',
+    Path('./client_secret.json'),
     scopes=['https://www.googleapis.com/auth/drive.metadata.readonly'])
 
 # Required, indicate where the API server will redirect the user after the user completes
