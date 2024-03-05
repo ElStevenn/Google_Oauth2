@@ -2,7 +2,8 @@
 ## OVERVIEW
 
  - A short Flask application to make the oauth 2.0 Authentication Server.
-   ![Oauth2 overview](https://paus-bucket.s3.amazonaws.com/server_storage/authorization-code.png)
+   
+![Oauth2 overview](https://paus-bucket.s3.amazonaws.com/server_storage/authorization-code.png)
    
 Once the client has the token, all you need to do it's just get the client's token, decode the code (with the auth server) and get the data (the data information will vary depending of the scopes)
 
